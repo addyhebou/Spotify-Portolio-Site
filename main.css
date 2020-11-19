@@ -36,10 +36,12 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 
 a{
-    color: black;
+    color: white;
+    cursor: pointer;
     text-decoration: none;
     text-decoration-style: none;
 }
+
 
 #appleholder{
     display: flex;
@@ -61,6 +63,10 @@ a{
     overflow: hidden;
     text-align: center;
     width: 100%;
+}
+
+.bodycontent{
+    background-image: linear-gradient(rgb(49, 1, 86), rgb(22, 22, 22)), url('');
 }
 
 #bio{
