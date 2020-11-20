@@ -137,6 +137,13 @@ a{
     display: block;
 }
 
+.ellipsis{
+    transition: 500ms;
+}
+
+.ellipsis:hover{
+    color: white;
+}
 #exp{
     font-family: 'Inter', sans-serif;
     font-size: 70px;
@@ -155,6 +162,14 @@ a{
 #night{
     display: none;
     background-color: coral;
+}
+
+.heart{
+    transition: 500ms;
+}
+
+.heart:hover{
+    color: white;
 }
 
 .heartAndTime{
@@ -318,18 +333,22 @@ p{
 }
 
 .playBtn{
-    background-color: #1db954;
-    border-radius: 20px;
-    color: #ffffff;
-    padding: 12px 10px;
-    text-align: center;
-    width: 130px;
+    transition: 500ms;
+}
+
+.playBtn:hover{
+    transform: scale(1.1);
 }
 
 .playlist{
     color: rgb(128, 128, 128);
     font-family: Gotham;
     margin: 10px 13px;
+    transition: 500ms;
+}
+
+.playlist > p:hover{
+    color: #1db954;
 }
 
 #scholder{
