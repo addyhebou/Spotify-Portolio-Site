@@ -1,71 +1,90 @@
-.bg-modal{
-  align-items: center;
-  background-color: rgba(0,0,0,0.7);
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  position: absolute;
+/* The Modal (background) */
+.modal {
+  text-align: center;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /* left: 0; */
   top: 0;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  visibility: hidden;
-  width: 100%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /* width: 800px; */
+  /* height: 800px; */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
 }
 
-.close{
+iframe{
+  text-align: center;
+  width: 800px;
+  height: 800px;
+}
+
+/* Modal Content */
+.modal-content {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  /* width: 800px; */
+  /* height: 800px; */
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
   cursor: pointer;
-  font-size: 42px;
-  position: absolute;
-  right: 14px;
-  top: 0;
-  transform: rotate(45deg);
 }
 
-.embeddedForms{
-  overflow: hidden;
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
 }
 
-input{
-  display: block;
-  margin: 15px auto;
-  width: 50%;
+/* .modal-body {padding: 2px 16px;} */
+
+.modal-footer {
+  /* padding: 2px 16px; */
+  background-color: #5cb85c;
+  color: white;
 }
 
-.modal-content{
-  align-items: center;
-  background-color: rgba(255,255,255,1);
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  opacity: 1;
-  padding: 20px;
-  position: relative;
-  text-align: center;
-  
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
 }
 
-
-
-.modal-content > img{
-  width: 10%;
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
 }
 
-.iframeholder{
-  width: 850px;
-  height: 500px;
-  margin: 20px 0px;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
 }
 
-.iframeholder > iframe{
-  position: absolute;
-  width: 100%;
-  height: 2000px;
-  top: -200px;
-  right: -0px;
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
 }
-    
