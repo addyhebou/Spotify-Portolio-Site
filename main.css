@@ -31,6 +31,11 @@
     font-family: SF;
     src: url(Fonts/SF/SF-Pro-Display-Regular.otf)
 }
+@font-face{
+    font-family: SF;
+    font-weight: lighter;
+    src: url(Fonts/SF/SF-Pro-Display-Thin.otf)
+}
 
 
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
@@ -272,11 +277,12 @@ main{
 }
 
 .MessageHeader{
-    align-items: center;
+    /* align-items: center; */
     display: flex;
     flex-direction: column;
+    margin: 0px 0px 30px 30px;
     position: absolute;
-    text-align: center;
+    /* text-align: center; */
     /* left: 0px; */
     left: 0;
     bottom: 0;
@@ -285,12 +291,16 @@ main{
     color: white;
     font-family: 'Gotham';
     font-size: 80px;
-    text-align: center;
+    left: 0;
+    padding: 0;
+    text-align: left;
 }
 .MessageHeader p{
     color: white;
     font-size: 20px;
-    text-align: center;
+    font-weight: lighter;
+    max-width: 820px;
+    text-align: left;
 }
 
 .middle{
